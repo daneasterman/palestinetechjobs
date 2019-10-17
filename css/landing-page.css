@@ -283,10 +283,6 @@ h6 {
   max-width: 800px;
 }
 
-.marketing-wrapper .section-head {
-  padding-bottom: 30px;
-}
-
 .marketing-wrapper ul {
   padding: 0;
   margin: 0;
@@ -422,7 +418,7 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .marketing-wrapper .section-head {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
 }
 
