@@ -206,45 +206,38 @@ h6 {
   border: 1px solid #3e153f;
 }
 
-#mc_embed_signup {
+.ebook-modal-wrapper .custom-form-body {
   background: #fff;
   clear: left;
-  padding: 15px 15px 20px 15px;
-  border-radius: 12px;
+  padding: 15px 15px 20px 15px;  
 }
 
-#mc_embed_signup h2 {
-  margin-top: 5px !important;
+.ebook-modal-wrapper .custom-form-body h2 {
+  margin-top: 5px ;
 }
 
 .custom-form-wrapper {
   display: flex;
-  padding-left: 15px;
   flex-direction: column;
+  align-items: center;
 }
 
-@media (min-width: 650px) {
-  .custom-form-wrapper {
-    flex-direction: row;
-  }
-}
-
-.custom-input {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 8px 12px 8px 12px;
-  border: 1px solid #cccccc;
-}
-
-@media (min-width: 650px) {
   .custom-input {
-    margin-right: 10px;
-    margin-bottom: 0;
-    margin-left: 0;
-    max-width: 100%;
-    width: 36%;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: white;  
   }
-}
+
+
+  @media screen and (min-width: 768px) {
+    .custom-input {
+      width: 75%;
+    }    
+  }
+
 
 .custom-input::placeholder {
   font-size: 13px;
@@ -253,20 +246,24 @@ h6 {
   font-weight: normal;
 }
 
+
 .custom-button {
+  margin-top: 10px;
   margin-bottom: 0 !important;
-  padding: 5px 22px !important;
-  height: 40px !important;
+  padding: 15px 22px !important;
+  font-size: 18px;  
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: #ffb000 !important;
   border-color: #ffb000 !important;
-  width: 100% !important;
+  width: 100%;
+  color: white;
+  border-radius: 4px;
 }
 
-@media (min-width: 650px) {
+@media screen and (min-width: 768px) {
   .custom-button {
-    width: auto !important;
-  }
+    width: 75%;
+  }    
 }
 
 .custom-button:hover {
