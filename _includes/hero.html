@@ -1,4 +1,41 @@
 <!-- Hero -->
+
+<section id="home">
+  <div class="intro-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="hero-wrapper">
+            <h1>Help us launch.</h1>
+            <h4 style="margin-bottom: 64px;" class="subtitle">
+              By signing up for free today, you will help make this platform a
+              reality
+            </h4>
+            <!-- INSERT EMAIL FORM ELEMENTS HERE: -->
+            <div class="mc-field-group hero-flex-form">
+              <input
+                placeholder="Enter your email address..."
+                type="email"
+                value=""
+                name="EMAIL"
+                class="required email custom-input"
+                id="custom-hero-email"
+              />
+              <a
+                class="ebook-button"
+                data-toggle="modal"
+                data-target="#signup-modal"
+                target="_blank"
+                >Join Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <style>
   .hero-wrapper {
     padding-top: 20%;
@@ -17,33 +54,47 @@
     text-align: center;
     font-size: 30px;
   }
-</style>
 
-<section id="home">
-  <div class="intro-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="hero-wrapper">
-            <h1>We are coming soon.</h1>
-            <div class="subtitle">
-              Join the world's first online community for tech jobs in
-              Palestine.
-            </div>
-            <!-- INSERT EMAIL FORM ELEMENTS HERE: -->
-            <div class="mc-field-group">                
-                <input
-                  type="email"
-                  value=""
-                  name="EMAIL"
-                  class="required email custom-input"
-                  id="mce-EMAIL"
-                />
-              </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  .hero-wrapper .custom-input {
+    width: 100%;
+    background-color: white;
+    border: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero-wrapper .custom-input {
+      width: 45%;
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  .hero-wrapper .ebook-button {
+    width: 100%;
+    padding: 12px;
+    line-height: inherit;
+    border-radius: 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero-wrapper .ebook-button {
+      width: 25%;
+    }
+  }
+
+  .hero-flex-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero-flex-form {
+      flex-direction: row;
+    }
+  }
+</style>
