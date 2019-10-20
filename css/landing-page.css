@@ -281,6 +281,7 @@ select {
   font-weight: 400;
   color: grey;
   font-weight: normal;
+  overflow: visible;
 }
 
 .custom-button {
