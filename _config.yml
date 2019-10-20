@@ -6,8 +6,8 @@ url: https://palestinetechjobs.com
 title: Palestine Tech Jobs
 email: daniel@palestinetechjobs.com
 author: Daniel Easterman
-description: The first dedicated tech jobs site for Palestine, specialising in connecting Palestine to the world of remote work.
-copyright: 'Copyright &copy; Palestine Tech Jobs. All Rights Reserved.'
+description: Join the world's first online community for tech jobs Palestine.
+copyright: "Copyright &copy; Palestine Tech Jobs. All Rights Reserved."
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
 # ----------------------- #
@@ -28,4 +28,4 @@ social:
   - title: github
     url: https://github.com/IronSummitMedia/startbootstrap
   - title: linkedin
-    url: 
+    url:
