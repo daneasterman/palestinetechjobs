@@ -45,15 +45,27 @@
             <p class="teaser">
               Sounds good?
             </p>
-            <a
-              class="ebook-button"
-              style="width: 60%; margin: 0 auto;"
-              data-toggle="modal"
-              data-target="#signup-modal"
-              target="_blank"
-              >Join waiting list</a
-            >
-            <!-- insert button here -->
+
+            <div class="about-flex-form">
+              <input
+                placeholder="Enter your email address..."
+                type="email"
+                value=""
+                name="EMAIL"
+                class="required email custom-input"
+                id="custom-hero-email"
+                style="background-color: #f8f8f8;"
+              />
+
+              <a
+                class="ebook-button"
+                style="margin-bottom: 20px;"
+                data-toggle="modal"
+                data-target="#signup-modal"
+                target="_blank"
+                >Join waiting list</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -66,3 +78,34 @@
     </div>
   </div>
 </section>
+
+<style>
+  .about-flex-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    .about-flex-form {
+      flex-direction: row;
+    }
+  }
+
+  .about-flex-form .ebook-button {
+    width: 100%;
+    line-height: inherit;
+    border-radius: 8px;
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .about-flex-form .ebook-button {
+      width: 50%;
+      margin-left: 20px;
+      padding: 13px;
+    }
+  }
+</style>

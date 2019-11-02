@@ -14,14 +14,6 @@
             </h4>
             <!-- INSERT EMAIL FORM ELEMENTS HERE: -->
             <div class="mc-field-group hero-flex-form">
-              <!-- <input
-                placeholder="Enter your email address..."
-                type="email"
-                value=""
-                name="EMAIL"
-                class="required email custom-input"
-                id="custom-hero-email"
-              />  -->
               <a class="ebook-button" href="#about" target="_blank"
                 >Find out more</a
               >
@@ -35,18 +27,32 @@
 
 <style>
   .hero-wrapper {
-    padding-top: 20%;
+    padding-top: 100px;
     padding-bottom: 20%;
   }
+
+  @media screen and (min-width: 768px) {
+    .hero-wrapper {
+      padding-top: 200px;
+    }
+  }
+
   .hero-wrapper h1 {
-    /* text-transform: uppercase; */
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 1.2;
     text-align: center;
     margin: 0 auto;
     max-width: 700px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
+
+  @media screen and (min-width: 768px) {
+    .hero-wrapper h1 {
+      font-size: 55px;
+    }
+  }
+
   .hero-wrapper .subtitle {
     color: #fff;
     font-weight: normal;
@@ -74,14 +80,17 @@
 
   .hero-wrapper .ebook-button {
     width: 100%;
-    padding: 12px;
     line-height: inherit;
     border-radius: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 16px 31px 16px;
   }
 
   @media screen and (min-width: 768px) {
     .hero-wrapper .ebook-button {
-      width: 25%;
+      width: 30%;
+      padding: 20px 31px 20px;
     }
   }
 
@@ -90,11 +99,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  @media screen and (min-width: 768px) {
-    .hero-flex-form {
-      flex-direction: row;
-    }
   }
 </style>
