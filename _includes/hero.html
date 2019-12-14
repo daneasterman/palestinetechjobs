@@ -10,12 +10,28 @@
               Palestine Tech Jobs
             </h1>
             <h4 style="margin-bottom: 48px;" class="subtitle">
-              A new platform to find high-quality remote tech jobs, designed for Palestinians.
+              A new platform to find and list remote tech jobs, designed for
+              Palestinians - coming soon in Jan 2020!
             </h4>
-            <!-- INSERT EMAIL FORM ELEMENTS HERE: -->
+
             <div class="mc-field-group hero-flex-form">
-              <a class="ebook-button" href="#about" target="_blank"
-                >Find out more</a>
+              <input
+                placeholder="Enter your email address..."
+                type="email"
+                value=""
+                name="EMAIL"
+                class="required email custom-input"
+                id="custom-hero-email"
+                style="background-color: #f8f8f8;"
+              />
+
+              <a
+                class="ebook-button"
+                data-toggle="modal"
+                data-target="#signup-modal"
+                target="_blank"
+                >Join Now</a
+              >
             </div>
           </div>
         </div>
@@ -28,12 +44,6 @@
   .hero-wrapper {
     padding-top: 100px;
     padding-bottom: 20%;
-  }
-
-  @media screen and (min-width: 768px) {
-    .hero-wrapper {
-      padding-top: 200px;
-    }
   }
 
   .hero-wrapper h1 {
@@ -54,23 +64,15 @@
     line-height: 1.2;
     text-align: center;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }  
-
-  @media screen and (min-width: 768px) {
-    .hero-wrapper h1 {
-      font-size: 55px;
-    }
   }
 
-
-  @media screen and (min-width: 768px) {
-    .hero-wrapper .custom-input {
-      width: 45%;
-      margin-right: 15px;
-      margin-bottom: 0;
-    }
+  .hero-flex-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero-wrapper .ebook-button {
@@ -79,20 +81,32 @@
     border-radius: 8px;
     font-size: 22px;
     font-weight: bold;
-    padding: 16px 31px 16px;
+    padding: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero-wrapper {
+      padding-top: 200px;
+    }
+
+    .hero-wrapper h1 {
+      font-size: 55px;
+    }
+
+    .hero-wrapper .custom-input {
+      width: 45%;
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: 768px) {
     .hero-wrapper .ebook-button {
-      width: 30%;
-      padding: 20px 31px 20px;
+      width: 25%;
     }
-  }
 
-  .hero-flex-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .hero-flex-form {
+      flex-direction: row;
+    }
   }
 </style>
