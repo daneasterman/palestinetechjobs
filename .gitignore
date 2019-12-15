@@ -2,3 +2,5 @@ _site
 .vscode
 .vscode/settings.json
 .DS_Store
+.ds_store
+.
